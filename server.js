@@ -9,17 +9,17 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleone
+var articleone=
 {
-    title   =`Article One  by KB`;
-    heading =`Article one`;
-    date    =`Sep 19, 2016`;
-    content=` 
+    title:`Article One  by KB`,
+    heading:`Article one`,
+    date:`Sep 19, 2016`,
+    content:` 
             <p>
                             This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
              </p>
              `
- }
+ };
 
 function createtemplate(data)
 {
