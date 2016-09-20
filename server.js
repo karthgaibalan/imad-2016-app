@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 var articles={
-    article-one:{
+    'article-one':{
         title:`Article One  by KB`,
         heading:`Article one`,
         date:`Sep 19, 2016`,
@@ -20,22 +20,22 @@ var articles={
                  </p>
                  `
  },
-    article-two:{
-        title:`Article One  by KB`,
+    'article-two':{
+        title:`Article tep  by KB`,
         heading:`Article one`,
-        date:`Sep 19, 2016`,
+        date:`Sep 20, 2016`,
         content:` 
                 <p>
-                                This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
+                                This is the content of Article twp.
                  </p>`
  },
-    aticle-three:{
-        title:`Article One  by KB`,
+    'article-three':{
+        title:`Article three  by KB`,
         heading:`Article one`,
-        date:`Sep 19, 2016`,
+        date:`Sep 21, 2016`,
         content:` 
                 <p>
-                                This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
+                                This is the content of Article three.
                  </p>`
                  `
  }
