@@ -10,34 +10,34 @@ app.get('/', function (req, res) {
 });
 
 var articles={
-article-one:{
-    title:`Article One  by KB`,
-    heading:`Article one`,
-    date:`Sep 19, 2016`,
-    content:` 
-            <p>
-                            This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
-             </p>
-             `
+    article-one:{
+        title:`Article One  by KB`,
+        heading:`Article one`,
+        date:`Sep 19, 2016`,
+        content:` 
+                <p>
+                                This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
+                 </p>
+                 `
  },
-article-two:{
-    title:`Article One  by KB`,
-    heading:`Article one`,
-    date:`Sep 19, 2016`,
-    content:` 
-            <p>
-                            This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
-             </p>`
+    article-two:{
+        title:`Article One  by KB`,
+        heading:`Article one`,
+        date:`Sep 19, 2016`,
+        content:` 
+                <p>
+                                This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
+                 </p>`
  },
-aticle-three:{
-    title:`Article One  by KB`,
-    heading:`Article one`,
-    date:`Sep 19, 2016`,
-    content:` 
-            <p>
-                            This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
-             </p>`
-             `
+    aticle-three:{
+        title:`Article One  by KB`,
+        heading:`Article one`,
+        date:`Sep 19, 2016`,
+        content:` 
+                <p>
+                                This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.This is the content of Article one.
+                 </p>`
+                 `
  }
 };
 
@@ -78,9 +78,10 @@ function createtemplate(data)
 return htmltemplate;
 }
 
-app.get('/article-one', function(req,res)
+app.get('/articlename', function(req,res)
 {
-    res.send(createtemplate(articleone));
+    var articlename = req.params.articlename;
+    res.send(createtemplate(articles[articlename]));
 });
 
 app.get('/article-two', function(req,res)
