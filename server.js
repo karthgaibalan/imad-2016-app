@@ -37,7 +37,6 @@ var articles={
                 <p>
                                 This is the content of Article three.
                  </p>`
-                 `
  }
 };
 
